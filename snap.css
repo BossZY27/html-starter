@@ -30,12 +30,12 @@ h1{
 .one{
     background: center;
     background-size: cover;
-    background-image: url(/27230.jpg);
+    background-image: url(/Pic/27230.jpg);
 }
 .two{
     background: center;
     background-size: cover;
-    background-image: url(/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
+    background-image: url(/Pic/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
     
     background-color: rgb(147, 147, 70);
 }
@@ -44,7 +44,7 @@ h1{
 }
 .three{
     background: center;
-    background-image: url(/dark-background-abstract-background-network-3d-background-2560x2560-8324.png);
+    background-image: url(/Pic/dark-background-abstract-background-network-3d-background-2560x2560-8324.png);
     background-color: rgb(248, 248, 57);
 }
 .t3{
@@ -52,7 +52,7 @@ h1{
     text-align: center;
 }
 .four{
-    background-image: url(desktop-wallpaper-dark-aesthetic-background-dark-aesthetic-star.jpg);
+    background-image: url(/Pic/desktop-wallpaper-dark-aesthetic-background-dark-aesthetic-star.jpg);
     background-color: rgb(105, 105, 7);
 }
 .t4{
