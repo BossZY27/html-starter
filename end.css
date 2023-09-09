@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #0c192c;
+}
+.con{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubles{
+    position: relative;
+    display: flex;
+}
+.bubles span{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: aqua;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #6ec9dd,0 0  100px #565c5d;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/var(--i));
+
+}
+.bubles span:nth-child(even){
+    background-color: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,0 0 50px #ff2d75,0 0 100px #ff2d75;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.box{
+    margin-top: 150px;
+    height: 100%;
+    justify-content: center;
+    
+    align-items: center;
+    text-align: center;
+    background-color: #9a95fa;
+
+   /* border:1px solid red ;*/
+}
+
+h1{
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+footer{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+    background: url(https://www.believerproductions.com/wp-content/uploads/2017/11/sample-BLACK-GLITTER.jpg);
+}
+.button_slide {
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  .slide_down:hover {
+    box-shadow: inset 0 100px 0 0 #28e83b;
+  }
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding:6px 15px ;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background: #fff;
+    color: #2b1055;
+}
+
+       
+        /* Style the navbar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Navbar links */
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* On hover, the links will change color */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style the navigation menu for small screens */
+        .navbar .menu-icon {
+            display: none;
+        }
+
+        /* Responsive navbar */
+        @media screen and (max-width: 600px) {
+            .navbar a:not(:first-child) {display: none;}
+            .navbar a.menu-icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar.responsive {position: relative;}
+            .navbar.responsive .menu-icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+   
