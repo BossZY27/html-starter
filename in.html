@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./in.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="myNavbar">
+            <a href="/snap.html">หน้าหลัก</a>
+            <a href="/snap.html">หน้า1</a>
+            <a href="in.html">หน้า2</a>
+            <a href="/test2.html">หน้า3</a>
+            <a href="end.html">หน้า4</a>
+            <a href="javascript:void(0);" class="menu-icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+        <script>
+            // Toggle the responsive class to show/hide the navigation menu
+            function myFunction() {
+                var x = document.getElementById("myNavbar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+
+    </header>
+
+    <section>
+        <img src="/Pic/stars.png" id="stars">
+        <img src="/Pic/moon.png" id="moon">
+        
+        <img src="/Pic/mountains_front.png" id="mountains_behind">
+        <h2 id="text">Port-Folio</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="/Pic/mountains_front.png" id="mountains_front">
+
+    </section>
+    <div class="sec" id="sec">
+        <h2>จะมาขอเเนะนำPort-Folioของผมนะครับ</h2>
+        <p>ขั้นเเรกขอพาดูในหน้าเว็บเเรกก่อนนะครับ <br></br>
+            โดยในหน้าเว็บนี้ของผมได้มีการใช้อนิเมชั่นให้ขยับได้ในข้างต้นครับ<br></br>
+            ***หมายเหตุนะครับเว็บไซต์นี้สามารถเลื่อนขึ้นเลื่อนลงเพื่อชมออนิเมชั่นได้นะครับ***<br></br><br></br>
+            จะขอใส่lorem100ไว้เพื่อจะได้รับชมเว็บไซต์ได้อย่างชัดเจนนะครับ<br></br><br></br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ut magnam expedita repudiandae sint inventore aut perferendis aspernatur aliquid tempora? Ratione, est inventore harum quos adipisci dolores doloribus ipsum numquam voluptas eaque iusto illum incidunt magni ea ad corrupti ex, voluptates iste, in esse consectetur. Unde obcaecati cum dolorem accusantium quae, nam inventore reprehenderit facere blanditiis tempore neque, perferendis deserunt explicabo. Quo, cum. Accusamus repellat omnis debitis aperiam reiciendis facilis eos porro eaque perferendis veniam? Omnis aliquam cupiditate excepturi ipsum quos explicabo esse, praesentium cumque minus odit. Dolorem impedit nostrum sapiente ab culpa, delectus eaque, doloremque facilis omnis error aspernatur.
+            ***หมายเหตุนะครับเว็บไซต์นี้สามารถเลื่อนขึ้นเลื่อนลงเพื่อชมออนิเมชั่นได้นะครับ***
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+       
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25+'px';
+            moon.style.top = value*1.05+'px';
+            mountains_behind.style.top = value*0.5+'px';
+            mountains_front.style.top = value*0+'px';
+            text.style.marginRight = value*4+'px';
+            text.style.marginTop = value*1.5+'px';
+            btn.style.marginTop = value*1.5+'px';
+            header.style.margintop = value*0.5+'px';
+        })
+    </script>
+    <footer>
+        <p>เชิญหน้าถัดไปเลยครับ</p>
+        <div href="./test2.html"style="text-decoration: none;"  class="button_slide slide_down"> 
+            <a href="./test2.html"style="text-decoration: none;"  >กดเพื่อดูหน้าต่อไป</a>
+        
+        </div>
+        
+        
+       
+    </footer>
+    
+</body>
+</html>
